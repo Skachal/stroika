@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clip-path"></div>
+    <header>
+        <a href="index.html" class="logo">Porto<span>folio</span></a>
+        <div class="navbar">
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Наши услуги</a></li>
+                <li><a href="projects.html">Наши проекты</a></li>
+                <li><a href="pricing.html">Цены</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div class="contentt">
+        <h1 style="text-align: center;">Contact</h1>
+        <div class="contact-container">
+            <div class="contact-card">
+                <a href="whatsapp://send?phone=+77777777" target="_popup">
+                    <img src="./img/icons8-whatsapp-50.png" alt="WhatsApp">
+                    <span class="contact-title">WhatsApp</span>
+                    <span class="contact-text">+7 777 777-77-77</span>
+                </a>
+            </div>
+            <div class="contact-card">
+                <a href="tel:+996555770087" target="_blank">
+                    <img src="./img/icons8-телефон-50.png" alt="Phone">
+                    <span class="contact-title">Номер телефона</span>
+                    <span class="contact-text">+777 777 777-77-77</span>
+                </a>
+            </div>
+            <div class="contact-card">
+                <a href="mailto:vomihail@inbox.ru" target="_blank">
+                    <img src="./img/icons8-gmail-50.png" alt="Email">
+                    <span class="contact-title">Email</span>
+                    <span class="contact-text">saminapishite@gmail.com</span>
+                </a>
+            </div>
+            <div class="contact-card">
+                <a href="https://www.instagram.com/mikhailvotinov/" target="_self">
+                    <img src="./img/icons8-instagram-50.png" alt="Instagram">
+                    <span class="contact-title">Instagram</span>
+                    <span class="contact-text">@vasha</span>
+                </a>
+            </div>
+           
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.hamburger').addEventListener('click', () => {
+                document.querySelector('.navbar').classList.toggle('active');
+                document.querySelector('.hamburger').classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

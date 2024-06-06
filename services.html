@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши услуги</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clip-path"></div>
+    <header>
+        <a href="index.html" class="logo">Porto<span>folio</span></a>
+        <div class="navbar">
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Наши услуги</a></li>
+                <li><a href="projects.html">Наши проекты</a></li>
+                <li><a href="pricing.html">Цены</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div class="content">
+        <h1>Наши услуги</h1>
+        <div class="services">
+            <div class="service">
+                <h2>Профессиональные консультации</h2>
+                <p>Первое, что мы хотим предложить Вам – это идею! Идею о том, что у любого помещения и пространства может быть свой уникальный климат, который близок хозяевам и всецело дополняет их образ.</p>
+            </div>
+            <div class="service">
+                <h2>Полноценный дизайн-проект</h2>
+                <p>Мы готовы пройти все этапы от идеи до воплощения вместе с Вами и превзойти ожидания. Современный дизайн, проработанный до мелочей, учитывающий все предпочтения – это то, что мы делаем. Не нужно нанимать отдельные компании и бригады для реализации разных задач, мы займёмся вашим ремонтом от и до.</p>
+            </div>
+            <div class="service">
+                <h2>Архитектурное проектирование</h2>
+                <p>Проектирование строений разной площади и предназначения: коттедж, магазин, павильон, беседка. Профессиональная команда архитекторов и дизайнеров запроектирует для Вас качественный объект и обеспечит всестороннюю проработку.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.hamburger').addEventListener('click', () => {
+                document.querySelector('.navbar').classList.toggle('active');
+                document.querySelector('.hamburger').classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

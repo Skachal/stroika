@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clip-path"></div>
+    <header>
+        <a href="index.html" class="logo">Porto<span>folio</span></a>
+        <div class="navbar">
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Наши услуги</a></li>
+                <li><a href="projects.html">Наши проекты</a></li>
+                <li><a href="pricing.html">Цены</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div class="vi">
+        <div class="text">
+            <h1>Работяги, <br>
+            Строим <span>все</span><br>
+            что попросите</h1>
+            <p>Мы такой-то такой-то компания принимает заказы в Алмате</p>
+            <a href="./contact.html" class="btn">Связатся</a>
+        </div>
+        <div class="img">
+            <img src="https://e7.pngegg.com/pngimages/833/38/png-clipart-user-profile-computer-software-internet-bot-user-miscellaneous-service.png" alt="Profile Image">
+        </div>
+   </div>
+    <script>
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.navbar').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

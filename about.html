@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clip-path"></div>
+    <header>
+        <a href="index.html" class="logo">Porto<span>folio</span></a>
+        <div class="navbar">
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Наши услуги</a></li>
+                <li><a href="projects.html">Наши проекты</a></li>
+                <li><a href="pricing.html">Цены</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div class="content">
+        <h1>О нас</h1>
+        <div class="about-info">
+            <p>Я Михаил Вотинов — основатель и руководитель студии дизайна, автор множества успешных проектов, некоторые из которых стали победителями и призерами различных дизайнерских конкурсов.</p>
+            <p>Ежедневно мы с моей командой создаем интерьеры, делаем их смелыми, яркими и независимыми, не забывая при этом о комфорте. Для нас нет скучных задач, мы всегда подчеркнём вашу индивидуальность!</p>
+        </div>
+        
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>14 лет делаем все по высшему классу</h3>
+                </div>
+                <div class="accordion-content">
+                    <p>Мы на рынке дизайна интерьеров и ремонта с 2009 года. Предлагаем комплексный спектр услуг: разработаем дизайн-проект, воплотим его в реальность, подберем мебель и отделочные материалы, декорируем готовый интерьер.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Если вы любите стиль</h3>
+                </div>
+                <div class="accordion-content">
+                    <p>Дизайн интерьера в современном стиле и стиле минимализм являются основными направлениями нашей работы. Наши проекты легко узнаются по профессиональному подходу к организации пространства и лаконичности, будь это интерьер загородного дома, коттеджа или квартиры.</p>
+                </div>
+            </div>
+        </div>
+        
+        <p>This is the about us page. Here you can write about the company, the team, and the mission.</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.hamburger').addEventListener('click', () => {
+                document.querySelector('.navbar').classList.toggle('active');
+                document.querySelector('.hamburger').classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
